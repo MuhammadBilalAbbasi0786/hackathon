@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --heading-font: 'Playfair Display', serif;
+    --para:'Urbanist', sans-serif;
+    --dark-color: rgb(45, 95, 46);
+    --light-color: rgb(152, 188, 98);
+    --text: #000;
+    --head: #fff;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: var(--para);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    font-weight: 400 !important;
+    color: var(--dark-color);
+    text-transform: capitalize;
+}
+.card {
+    border: 2px solid var(--dark-color) !important;
+    border-radius: 10px !important;
+}
+p.card-text {
+    color: var(--text) !important;
+}
+button.btn {
+    background: var(--dark-color) !important;
+    border: 1px solid var(--dark-color) !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    width: 100% !important;
+    font-weight: 500 !important;
+    font-family: var(--para);
+}
+button.btn:hover{
+    background: transparent !important;
+    border: 1px solid var(--dark-color) !important;
+    color: var(--dark-color) !important;
+}
+.form-select:focus {
+    border-color: var(--dark-color) !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.margin{
+    margin-bottom: 50px !important;
+    
+}
+.withd-new {
+    width: 100%;
+}
+select.form-select {
+    border: 2px solid var(--dark-color) !important;
+    border-radius: 10px !important;
+}
+label.form-label {
+    font-size: 16px !important;
+    color: var(--text);
+}
+.card-title.h5 {
+    text-transform: capitalize;
+}
+.banner-content h1{
+    text-align: center;
+}
+
+.inner-profile {
+    width: 350px !important;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    overflow: hidden;
+    padding: 0px 0px 20px 0px;
+}
+img.profileimage {
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+.uerspading{
+    padding: 0px 20px;
+}

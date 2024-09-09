@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --heading-font: 'Playfair Display', serif;
+    --para:'Urbanist', sans-serif;
+    --dark-color: rgb(45, 95, 46);
+    --light-color: rgb(152, 188, 98);
+    --text: #000;
+    --head: #fff;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: var(--para);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    font-weight: 400 !important;
+    color: var(--dark-color);
+    text-transform: capitalize;
+}
+
+.useremail{
+    color: var(--dark-color);
+}
+
+img.dashboardUserImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid var(--dark-color);
+    border-radius: 100%;
+}
+.bgtab {
+    background-color: var(--light-color);
+    padding: 0px;
+    position: fixed;
+    width: 25%;
+}
+.userBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    row-gap: 11px;
+    padding: 10px;
+    border-bottom: 1px solid var(--dark-color);
+}
+.left-box {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin; /* For Firefox, makes the scrollbar thin */
+    scrollbar-color: var(--dark-color) transparent; /* For Firefox: custom color */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    border-bottom: 1px solid var(--dark-color);
+}
+.tab-icon {
+    font-size: 32px;  /* Set the icon size */
+    color: var(--dark-color);   /* Set the icon color (e.g., blue) */
+    width: 30%;
+  }
+a{
+    text-decoration: none;
+}
+
+span.tab-text {
+    font-size: 18px;  /* Set the icon size */
+    color: var(--dark-color); 
+    width: 70%;
+    font-family: var(--heading-font);
+    text-decoration: none;
+}
+.tabs:hover{
+    background: var(--dark-color);
+    cursor: pointer;
+}
+.tabs:hover .tab-icon {
+    font-size: 32px;  /* Set the icon size */
+    color: var(--light-color);   /* Set the icon color (e.g., blue) */
+    width: 30%;
+  }
+
+.tabs:hover span.tab-text {
+    font-size: 18px;  /* Set the icon size */
+    color: var(--light-color); 
+    width: 70%;
+    font-family: var(--heading-font);
+}
+img.graph {
+    width: 100%;
+    border: 2px solid var(--dark-color);
+}
+
+.applicationImage {
+    width: 100%;
+    height: 250px;
+    border-radius: 9px;
+    object-fit: cover;
+    border: 2px solid var(--dark-color);
+}
+button.left {
+    width: 40% !important;
+    padding: 10px 25px;
+
+}
+.lef-mr{
+    margin-left: 10px;
+}
+select {
+    border: 2px solid var(--dark-color) !important;
+    margin-bottom: 5px;
+}
+.label.form-label{
+    font-family: var(--para);
+}
+.padding-left{
+    padding-right:20px !important ;
+}
+.lef-m{
+    margin-left: 10px;
+}
+.padding-new {
+    padding-right: 17px;
+    padding-top: 0px;
+}
+.new-b{
+    padding-bottom: 20px;
+}
+.new-b{
+    margin: 20px 0px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    span.tab-text {
+        display: none;
+    }
+    img.dashboardUserImage {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 2px solid var(--dark-color);
+        border-radius: 100%;
+    }
+    .tab-icon {
+        font-size: 25px;
+        color: var(--dark-color);
+        width: 100%;
+    }
+    b.useremail {
+        font-size: 10px;
+    }
+    b.useremail {
+        font-size: 10px;
+        display: none;
+    }
+    h2.username {
+        font-size: 14px;
+    }
+    .userBox {
+        row-gap: 10px;
+        padding: 10px 0px 0px 15px;
+    }
+    .tabs {
+        padding-left: 32px;
+    }
+    button.left {
+        width: 100% !important;
+        padding: 5px 25px !important;
+    }
+    .lef-mr {
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+    }
+    .applicationImage{
+        height: 240px;
+    }
+    .m-100p{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 10px !important;
+    }
+
+    .small{
+        font-size: 12px !important;
+    }
+    
+  }
+
+  input {
+    border: 2px solid var(--dark-color) !important;
+    margin-bottom: 5px;
+}
+  
+ 
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+   
+    span.tab-text {
+        display: none;
+    }
+    img.dashboardUserImage {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 2px solid var(--dark-color);
+        border-radius: 100%;
+    }
+    .tab-icon {
+        font-size: 25px;
+        color: var(--dark-color);
+        width: 100%;
+    }
+    b.useremail {
+        font-size: 10px;
+        display: none;
+    }
+    h2.username {
+        font-size: 14px;
+    }
+    .userBox {
+        row-gap: 10px;
+        padding: 10px 0px 0px 15px;
+    }
+    .tabs {
+        padding-left: 32px;
+    }
+    button.left {
+        width: 100% !important;
+        padding: 5px auto !important;
+    }
+    .lef-mr {
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+    }
+    .applicationImage{
+        height: 240px;
+    }
+    .m-100p{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 10px !important;
+    }
+    .small{
+        font-size: 12px !important;
+    }
+  }

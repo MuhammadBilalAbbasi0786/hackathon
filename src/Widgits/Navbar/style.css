@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --heading-font: 'Playfair Display', serif;
+    --para:'Urbanist', sans-serif;
+    --dark-color: rgb(45, 95, 46);
+    --light-color: rgb(152, 188, 98);
+    --text: #000;
+    --head: #fff;
+}
+body{
+    font-family: var(--para);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    font-weight: 400 !important;
+}
+.max-width{
+    max-width: 1200px;
+    margin: auto;
+}
+a.button-link {
+    background: var(--dark-color);
+    color: white;
+    padding: 10px 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: var(--para);
+    transition: all 0.5s;
+    border: 1px solid var(--dark-color);
+
+}
+.button-link:hover {
+    background: transparent;
+    color: var(--dark-color);
+}
+.navstyle{
+    column-gap: 40px;
+    color: #fff !important;
+    
+}
+.main-nav{
+    background: var(--light-color);
+}
+.navbar-toggler {
+    padding: 4px !important;
+    background: var(--dark-color) !important;
+    color: var(--light-color);
+}
+.navbar-toggler-icon {
+   color: white !important; /* White background for icon */
+   fill: var(--head) !important;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+a.nav-link{
+    color: var(--text) !important;
+    transition: all 0.5s;
+}
+a.nav-link:hover{
+    color: var(--head) !important;
+    background: var(--dark-color);
+    border-radius: 10px;
+}
+a.nav-link:active{
+    color: var(--head) !important;
+    background: var(--dark-color);
+}
+.navlog{
+    width: 120px;
+}
+@media (min-width: 481px) and (max-width:900px) {
+  
+    div.navbar-collapse {
+        height: 100vh !important;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 20px !important;
+    }
+    .navstyle{
+        row-gap: 30px;
+        color: #fff !important;
+        
+    }
+    .mx-auto.navstyle.my-2.my-lg-0.navbar-nav.navbar-nav-scroll {
+        width: 100%;
+    }
+    div#navbarScroll a {
+        text-align: center;
+    }
+    
+  }
+  
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    div#navbarScroll a {
+        text-align: center;
+    }
+    
+    div.navbar-collapse {
+        height: 100vh !important;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 20px !important;
+    }
+    .navstyle{
+        row-gap: 30px !important;
+        color: #fff !important;
+        
+    } 
+    .mx-auto.navstyle.my-2.my-lg-0.navbar-nav.navbar-nav-scroll {
+        width: 100%;
+    }
+    
+  }

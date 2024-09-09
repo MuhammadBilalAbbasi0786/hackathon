@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --heading-font: 'Playfair Display', serif;
+    --para:'Urbanist', sans-serif;
+    --dark-color: rgb(45, 95, 46);
+    --light-color: rgb(152, 188, 98);
+    --text: #000;
+    --head: #fff;
+}
+body{
+    font-family: var(--para);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    font-weight: 400 !important;
+}
+/* Footer.css */
+footer {
+    padding-top: 40px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: var(--text); /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.footer-links li a:hover {
+    color: var(--dark-color); /* Bootstrap's Danger color */
+}
+
+/* Newsletter input styling */
+.input-group .form-control {
+    border: none;
+    border-radius: 10px 0px 0px 10px    ;
+}
+.text-black{
+    color: var(--text) !important;
+}
+.input-group .btn {
+    border-radius: 0;
+}
+.me-2{
+    color: var(--dark-color);
+}
+.me-3{
+    color: var(--dark-color);
+}
+
+/* Social Media Icons */
+.d-flex .me-3:hover {
+    color: var(--text); /* Same danger red */
+    cursor: pointer;
+}
+
+/* Adjust color of text */
+footer h5 {
+    color: var(--dark-color); /* Light text color */
+}
+
+/* Custom styling for the footer background */
+footer.bg-dark {
+    background-color: var(--light-color) !important; /* Darker shade of Bootstrap dark */
+}
+
+.footer-btn {
+    background-color: var(--dark-color) !important;
+    border: 0px !important;
+    padding: 4px 10px;
+    text-decoration: none;
+    color: wheat;
+    border-radius: 0px 10px 10px 0px;
+}
+a.footer-btn {
+    height: 39px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+.form-control:focus {
+    color: var(--text);
+    background-color: var(--head);
+    /* border-color: #86b7fe; */
+    outline: 0;
+    box-shadow: 0 0 0 !important;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    a.footer-btn {
+        height: 40px;
+    }
+    
+  }
+  
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+ 
+    a.footer-btn {
+        height: 40px;
+    }
+  }

@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --heading-font: 'Playfair Display', serif;
+    --para:'Urbanist', sans-serif;
+    --dark-color: rgb(45, 95, 46);
+    --light-color: rgb(152, 188, 98);
+    --text: #000;
+    --head: #fff;
+}
+body{
+    font-family: var(--para);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    font-weight: 400 !important;
+    color: var(--dark-color);
+}
+p{
+    color: var(--text);
+}
+.text-black{
+    color: var(--text);
+}
+.footerPara{
+    color: var(--text);
+}
+.center{
+    text-align: center;
+}
+.banner-content {
+    width: 700px !important;
+    margin: auto;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+
+.field-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* input {
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid red;
+    border-radius: 7px;
+    height: 35px;
+} */
+input.form-field{
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid var(--dark-color);
+    border-radius: 7px;
+    height: 35px;
+}
+input.form-field:focus {
+    outline: none; /* Remove default outline */
+    border-color: var(--dark-color); /* Apply custom focus border */
+    box-shadow: 0 0 5px var(--light-color); /* Optional shadow on focus */
+    caret-color: auto; /* Ensures that the blinking cursor is visible */
+  }
+.center{
+    text-align: center !important;
+  }
+
+
+  .formInner {
+    border: 2px solid var(--dark-color);
+    padding: 50px;
+    border-radius: 20px;
+    width: 650px;
+    background-image: linear-gradient(344deg, rgb(152, 188, 98), transparent);
+    box-shadow: 0px 0px 30px #2d5f2e;
+    margin: 50px auto;
+}
+button.fromBtn {
+    background: var(--dark-color);
+    color: white;
+    border: 0px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.error-message {
+    font-size: 10px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.link-form1 a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+input.image-field {
+    border: 0px !important;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+   .banner-content {
+    width: 100%;
+    padding: 50px 20px;
+}
+    .formInner{
+        width: 100%;
+        margin: 30px 10px;
+        padding: 25px;
+    }
+  }
+  
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+   .banner-content {
+    width: 100%;
+    padding: 50px 20px;
+}
+.formInner{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 25px;
+}
+    
+  }
